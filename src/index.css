@@ -127,4 +127,50 @@
   html {
     @apply font-sans;
     }
+  .outer-gradient{
+    background: linear-gradient(
+      90deg, 
+      rgb(236, 216, 197),
+      rgb(238, 204, 172)
+      )
+  }
+  .radial-bg{
+    position: absolute;
+    inset: 0;
+    height: 500px;
+    background: radial-gradient(
+      circle at top,
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,0.8) 30%,
+      rgba(255,255,255,0) 55%,
+      rgba(255,255,255,0) 75%
+    )
+  }
+  .bottom-left-gradient{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    background: radial-gradient(
+      circle at bottom left,
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,0.8) 30%,
+      rgba(255,255,255,0) 55%,
+      rgba(255,255,255,0) 75%
+    )
+  }
+  .bottom-right-gradient{
+     width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: radial-gradient(
+      circle at bottom right,
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,0.8) 30%,
+      rgba(255,255,255,0) 55%,
+      rgba(255,255,255,0) 75%
+    )
+  }
 }

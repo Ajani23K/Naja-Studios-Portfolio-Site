@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/ui/header";
+import Home from "@/containers/home";
 
 
 const App = () => {
@@ -10,7 +11,7 @@ const App = () => {
     <Header />
   
     {/*home section*/}
-
+    <Home />
     {/*works*/}
 
     {/*about*/}

@@ -44,7 +44,7 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between w-full container mx-auto p-4 md:p-8 fixed top-0 left-0 z-50">
-        <h2 className="text-2xl md:text-3xl italic font-serif font-normal text-neutral-700">AnnaMarie King.</h2>
+        <h2 className="text-2xl md:text-3xl italic font-serif font-normal text-neutral-700">Naja Design Studio.</h2>
         <nav>
             <ul className ="flex items-center gap-6">
                 {NavMenus.map((menu, index) => {
@@ -67,7 +67,16 @@ const Header = () => {
               })}
             </ul>
         </nav>
-        <a href='/#contact'>
+        <a href="/?section=contact" onClick={ (e) => {
+          e.preventDefault();
+          handleNavigationalLinkClick({
+            label: "Testimonial",
+            url: "/?section=contact",
+            key: "contact",
+          });
+        }
+
+        }>
           <Button size="sm" className={"cursor-pointer"} > Contact </Button>
         </a>
     </header>
