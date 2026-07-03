@@ -1,0 +1,1 @@
+export {default as HeroBG} from "@/assets/heroBg.jpg" 
