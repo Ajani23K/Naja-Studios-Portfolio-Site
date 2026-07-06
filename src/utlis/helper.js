@@ -1,3 +1,5 @@
+import { RenovKitchen } from "@/assets"
+
 export const NavMenus = [
     {
         label : "Home",
@@ -19,5 +21,14 @@ export const NavMenus = [
         url : "/?section=services",
         key: "services"
     },
-
 ]
+    export const ProjectsData = [
+        {
+            id: 1,
+            title: "North Philadelphia Renovation",
+            description: 
+            "Renovating the living, dining, and kitchen space of a North Philadelphia home",
+            renovated: ["Kitchen", "Living Room", "Dining Room"],
+            image: RenovKitchen,
+        },
+    ]

@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/ui/header";
 import Home from "@/containers/home";
+import Works from "@/containers/works";
 
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
     {/*home section*/}
     <Home />
     {/*works*/}
-
+    <Works />
     {/*about*/}
 
     {/*services*/}
