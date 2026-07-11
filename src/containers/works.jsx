@@ -21,7 +21,7 @@ const Works = () => {
 const ProjectCard = ({project}) => {
     return (
         <div className='w-full flex flex-col items-start justify-start gap-2'>
-            <div className='aspect-video rounded-md overflow-hidden flex items-center justify-center'>
+            <div className='aspect-video rounded-md overflow-hidden flex items-center justify-center border-4 border-neutral-200'>
                 <img src={project.image}
                  alt={project.title} 
                  className='w-full h-full object-cover hover:scale-110 grayscale-100 hover:grayscale-0 transition-all duration-300 ease-in-out'/>
@@ -32,7 +32,7 @@ const ProjectCard = ({project}) => {
 
             <div className='flex items-center justify-center gap-2'>
                 {project.renovated.slice(0,3).map((renovated, index) =>(
-                    <Badge key={index}>{renovated}</Badge>
+                    <Badge variant="secondary" key={index}>{renovated}</Badge>
                 ))}
             </div>
         </div>

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/ui/header";
 import Home from "@/containers/home";
 import Works from "@/containers/works";
+import About from "@/containers/about";
 
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
     {/*works*/}
     <Works />
     {/*about*/}
-
+    <About />
     {/*services*/}
 
     {/*testimonial*/}
