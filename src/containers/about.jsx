@@ -12,13 +12,26 @@ const About = () => {
                 <span className='font-sans font-semibold text-neutral-400'> 2010</span>
                 </h3>
 
-            <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-8'>
+            <div className="grid lg:grid-cols-[380px_1fr] xl:grid-cols-[450px_1fr] gap-16 items-start">
                {/* left */} 
-                    <div className='w-full space-y-6'>
-                        <div className='aspect-video rounded-lg border-2 border-neutral-200'>
-                            <img src={AboutImg} className='w-full h-full object-contain'/>
+                    <div className="w-full max-w-[320px] mx-auto">
+                     <img className='w-full rounded-xl shadow-lg object-cover'
+                         src={AboutImg}
+                         alt="About"
+                        
+                        />
+
+                        <div className="mt-6 text-center">
+                            <h4 className="text-2xl font-serif text-neutral-800">
+                                Anna Marie King
+                            </h4>
+
+                            <p className="mt-1 uppercase tracking-[0.2em] text-sm text-neutral-500">
+                                Founder & Principal Designer
+                            </p>
                         </div>
                     </div>
+                    
                     
                    
                {/* right */} 
@@ -30,6 +43,8 @@ const About = () => {
 
                 </p>
                </div>
+
+              
             </div>
         </section>
   )
