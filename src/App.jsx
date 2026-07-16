@@ -4,6 +4,8 @@ import Header from "@/components/ui/header";
 import Home from "@/containers/home";
 import Works from "@/containers/works";
 import About from "@/containers/about";
+import Services from "@/containers/services"
+import Contact from "@/containers/contact"
 
 
 const App = () => {
@@ -19,11 +21,10 @@ const App = () => {
     {/*about*/}
     <About />
     {/*services*/}
-
-    {/*testimonial*/}
+    <Services />
 
     {/*contact*/}
-
+    <Contact/>
     {/*footer*/}
   </div>
 };

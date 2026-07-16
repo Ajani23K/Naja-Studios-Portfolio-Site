@@ -12,7 +12,7 @@ const Home = () => {
 
           <img alt="Naja Design"
           src={HeroBG}
-          className='w-[320px] sm:w-[300px] md:w-[420px] lg:w-[780px] grayscale contrast-125 brightness-110 object-contain object-bottom image-mask'/>
+          className='w-[320px] sm:w-[300px] md:w-[420px] lg:w-[780px] brightness-110 object-contain object-bottom image-mask'/>
           
         </div>
 
