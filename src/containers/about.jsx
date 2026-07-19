@@ -8,8 +8,7 @@ const About = () => {
                 The People Behind Our Mission
             </h2>
             
-            <h3 className='text-2xl md:text-4xl text-center font-normal font-serif text-neutral-600'>Creating Personally Tailored Living Arrangements since 
-                <span className='font-sans font-semibold text-neutral-400'> 2010</span>
+            <h3 className='text-2xl md:text-4xl text-center font-normal font-serif text-neutral-600'>Creating Personally Tailored Living Arrangements since 2010
                 </h3>
 
             <div className="grid lg:grid-cols-[380px_1fr] xl:grid-cols-[450px_1fr] gap-16 items-start">
