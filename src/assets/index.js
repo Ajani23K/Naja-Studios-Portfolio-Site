@@ -1,4 +1,4 @@
-export {default as HeroBG} from "@/assets/heroBg.jpg" 
+export {default as HeroBG} from "@/assets/najalogo2.png" 
 export {default as AboutImg} from "@/assets/about.jpg"
 
 export {default as RenovKitchen} from "@/assets/kitchenafter.png"

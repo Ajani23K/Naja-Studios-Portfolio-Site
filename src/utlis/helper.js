@@ -4,22 +4,26 @@ import { RenovKitchen } from "@/assets"
         {
             label : "Home",
             url : "/",
-            key: "home"
+            key: "home",
+            type: "section"
         },
         {
             label : "Works",
-            url : "/?section=works",
-            key: "works"
+            url : "/works",
+            key: "works",
+            type: "page"
         },
         {
             label : "About",
             url : "/?section=about",
-            key: "about"
+            key: "about",
+            type: "section"
         },
         {
             label : "Services",
             url : "/?section=services",
-            key: "services"
+            key: "services",
+            type: "section"
         },
     ]
     export const ProjectsData = [

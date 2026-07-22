@@ -2,10 +2,12 @@ import React from 'react'
 import { Button } from "@/components/ui/button";
 import { NavMenus } from '@/utlis/helper';
 import { cn } from "@/lib/utils";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
 
-
+    const navigate = useNavigate();
+    const location = useLocation();
     const [activeSection, setActiveSection] = React.useState("home");
 
     // read URL on load + back/forward navigation
@@ -23,17 +25,29 @@ const Header = () => {
       return () => window.removeEventListener("popstate", syncFromUrl);
     }, [])
     const handleNavigationalLinkClick = (menu) => {
-      const url = new URL(window.location);
+      if (menu.type === "page") {
+      navigate(menu.url);
+      return;
+      }
+
+      
       if(menu.key === "home") {
-        url.search = "";
-        window.history.pushState({}, "", url);
+        if (location.pathname !== "/") {
+        navigate("/");
+        return;
+        }
 
         window.scrollTo({top: 0, behavior: "smooth"});
         setActiveSection("home")
         return;
       }
       //other sections
-
+      
+      if (location.pathname !== "/") {
+      navigate(`/?section=${menu.key}`);
+      return;
+      }
+      const url = new URL(window.location);
       url.searchParams.set("section", menu.key);
       window.history.pushState({}, "", url);
 
@@ -70,7 +84,7 @@ const Header = () => {
         <a href="/?section=contact" onClick={ (e) => {
           e.preventDefault();
           handleNavigationalLinkClick({
-            label: "Testimonial",
+            label: "Contact",
             url: "/?section=contact",
             key: "contact",
           });

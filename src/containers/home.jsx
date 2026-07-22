@@ -1,5 +1,7 @@
 import React from 'react'
 import { HeroBG } from '@/assets'
+
+
 const Home = () => {
   return (
     <div className="w-full h-screen pt-24 relative outer-gradient">
@@ -12,13 +14,13 @@ const Home = () => {
 
           <img alt="Naja Design"
           src={HeroBG}
-          className='w-[320px] sm:w-[300px] md:w-[420px] lg:w-[780px] brightness-110 object-contain object-bottom image-mask'/>
+          className='w-[320px] sm:w-[50px] md:w-[100px] lg:w-[200px] brightness-110 object-contain image-mask'/>
           
         </div>
 
         {/* */}
         <div className='relative flex flex-col items-center justify-between text-center pointer-events-none h-full'>
-          <h2 className='text-neutral-700 font-normal font-serif italic text-5xl md:text-6xl lg:text-8xl tracking-widest'>Welcome!</h2>
+          <h2 className='text-neutral-700 font-normal font-serif italic text-4xl md:text-5xl lg:text-7xl tracking-widest'>Naja Design</h2>
 
           <div className='w-full flex items-center justify-between px-12'>
             <div className=' p-2 rounded-full bg-white shadow-sm flex items-center gap-2'>
@@ -36,9 +38,9 @@ const Home = () => {
           </div>
 
           <div className='w-full flex items-center justify-between px-12 z-50'>
-            <h1 className='text-4xl md:text-6xl lg:text-8xl text-left font-bold font-sans text-neutral-800 tracking-widest uppercase'>NAJA <br />DESIGN</h1>
+            <h1 className='text-2xl md:text-4xl text-left font-bold font-sans text-neutral-800 tracking-widest uppercase'>Home <br />Renovator</h1>
 
-            <h2 className='text-2xl md:text-4xl text-left font-bold text-neutral-800 tracking-wider uppercase'>Interior and Home <br />Designer</h2>
+            <h2 className='text-2xl md:text-4xl text-left font-bold text-neutral-800 tracking-wider uppercase'>Interior <br />Designer</h2>
           </div>
         </div>
     </div>
